@@ -37,7 +37,7 @@ export default function ChatArea() {
 
             i++;
 
-            i % 20 === 0 && scrollToBottomRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            i % 150 === 0 && scrollToBottomRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
 
             if (i > stringResponse.length) {
                 clearInterval(intervalId);
