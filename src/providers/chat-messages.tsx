@@ -15,7 +15,7 @@ export const ChatMessagesContext = createContext({
 export function ChatMessagesProvider({ children }: { children: React.ReactNode }) {
     const [messages, setMessages] = useState<{ message: string, sender: string, profilePhoto: string }[]>([]);
     const [placeholder, setPlaceholder] = useState('');
-    const [aiTyping, setAiTyping] = useState(null);
+    const [aiTyping, setAiTyping] = useState(false);
 
     const addMessage = (message: string, sender: string) => {
         var profilePhoto = "";
