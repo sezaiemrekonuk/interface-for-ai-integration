@@ -35,6 +35,10 @@ body {
     @apply bg-slate-100 dark:bg-[#1c1c1e];
   }
 
+  .bg-highlight-more {
+    @apply bg-slate-200 dark:bg-[#2c2c2e];
+  }
+
   .bg-highlight-hover {
     @apply hover:bg-slate-200 hover:dark:bg-[#2c2c2e];
   }
@@ -42,5 +46,43 @@ body {
 
   .text-hover-bright {
     @apply dark:text-slate-400 dark:hover:text-white text-gray-600 hover:text-black
+  }
+}
+
+.typing-demo {
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: flicker 0.5s infinite;
+  margin-bottom: 4px;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
