@@ -89,8 +89,7 @@ export default function ChatArea() {
                                 <Image src={msg.profilePhoto} width={35} height={35} alt="profile photo" className="rounded-full bg-clip-content bg-white self-start" />
                                 {
                                     msg.sender === 'ai' && (!completedTyping && index === messages.length - 1) ? <div className="flex flex-row items-center gap-2">
-                                        <p className={`text-lg`}>{displayResponse}</p>
-                                        {completedTyping ? null : <CursorSVG />}
+                                        <p className={`text-lg`}>{displayResponse}{completedTyping ? null : <CursorSVG />}</p>
                                     </div> : <p className={`text-lg`}>{msg.message}</p>
                                 }
 
