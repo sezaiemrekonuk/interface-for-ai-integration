@@ -82,7 +82,7 @@ export default function ChatArea() {
             return <ChatPlaceHolder />
         } else {
             return (
-                <div className="flex-v items-start gap-4 w-full h-full grow py-2" style={{ maxHeight: '70vh', overflowY: 'auto' }}>
+                <div className="flex-v items-start gap-4 w-full h-full grow py-2 " style={{ maxHeight: '70vh', overflowY: 'auto' }}>
                     {messages.map((msg, index) => (
                         <div key={index} className={`flex gap-2 ${msg.sender === 'user' ? 'self-end' : 'self-start'}`}>
                             <div className={`p-4 bg-highlight-more rounded-2xl shadow-md ${msg.sender === 'user' ? 'bg-primary' : 'bg-highlight'} flex flex-row gap-2 items-center justify-center`}>

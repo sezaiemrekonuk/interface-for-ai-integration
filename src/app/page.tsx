@@ -12,7 +12,7 @@ export default function Home() {
 
       <ChatContainer>
         <div className="container flex items-center flex-v min-h-dvh">
-          <div className="w-3/4 ">
+          <div className="w-4/5 ">
             <ChatArea />
           </div>
         </div>
