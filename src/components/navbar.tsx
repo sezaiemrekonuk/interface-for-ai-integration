@@ -2,6 +2,7 @@ import NAVROUTES from "@/utils/nav-routes";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeSwitch from "./theme-switch";
+import Logo from "@/static/logo.png";
 
 export default function Navbar() {
 
@@ -19,11 +20,11 @@ export default function Navbar() {
     return (<>
         <nav className="flex-h flex-center px-6 shadow-md py-1">
             <Image
-                src={"/static/images/logo.svg"}
+                src={Logo}
                 alt="Logo"
-                width={100}
-                height={50}
-                className="dark:invert me-auto"
+                width={150}
+                height={100}
+                className="invert dark:invert-0 me-auto"
             />
             <ul className="flex-h gap-10 me-auto">
                 {pages}
