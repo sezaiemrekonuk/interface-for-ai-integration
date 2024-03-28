@@ -7,7 +7,7 @@ export default function Navbar() {
 
     const pages: React.ReactNode = (
         NAVROUTES.map((page, index) => (
-            <li key={index} className="text-sm hover:bg-highlight transition-all duration-200 p-2 hover:px-5 rounded-xl">
+            <li key={index} className="text-sm hover:bg-highlight transition-all duration-200 p-2 hover:px-5 rounded-xl text-hover-bright">
                 <Link href={page.path
                 }>
                     {page.name}

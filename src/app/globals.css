@@ -34,4 +34,13 @@ body {
   .bg-highlight {
     @apply bg-slate-100 dark:bg-[#1c1c1e];
   }
+
+  .bg-highlight-hover {
+    @apply hover:bg-slate-200 hover:dark:bg-[#2c2c2e];
+  }
+
+
+  .text-hover-bright {
+    @apply dark:text-slate-400 dark:hover:text-white text-gray-600 hover:text-black
+  }
 }
