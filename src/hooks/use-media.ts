@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 
+type MediaQueryListEvent = {
+    matches: boolean;
+};
+
 export default function useMedia({ query }: { query: number }) {
     const [isMatch, setIsMatch] = useState(false);
 
