@@ -14,6 +14,7 @@ export default function Home() {
         <div className="container flex items-center flex-v min-h-dvh">
           <div className="w-4/5 ">
             <ChatArea />
+            <a className="block underline text-xs text-center mt-[5px] text-slate-600">Made by HAGIA</a>
           </div>
         </div>
       </ChatContainer>

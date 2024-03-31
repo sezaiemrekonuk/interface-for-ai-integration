@@ -25,11 +25,11 @@ export default function ThemeSwitch() {
     )
 
     if (resolvedTheme === 'dark') {
-        return <FiSun onClick={() => setTheme('light')} className="me-2" />
+        return <FiSun onClick={() => setTheme('light')} className="me-2 hover:scale-110 transition-all duration-200 rotate_animation" />
     }
 
     if (resolvedTheme === 'light') {
-        return <FiMoon onClick={() => setTheme('dark')} className="me-2" />
+        return <FiMoon onClick={() => setTheme('dark')} className="me-2 hover:scale-110 transition-all duration-200 rotate_animation" />
     }
 
 }

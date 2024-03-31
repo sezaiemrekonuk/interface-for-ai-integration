@@ -19,7 +19,7 @@ export default function ChatArea() {
 
     useEffect(() => {
         const height = window.innerHeight;
-        const reducedHeight = height * 0.9;
+        const reducedHeight = height * 0.87;
         setMinHeight(parseInt(reducedHeight.toString()));
     }, []);
 
@@ -104,7 +104,11 @@ export default function ChatArea() {
 
     return (
         <div className={"flex-v items-center justify-between h-full gap-2 p-2 bg-primary shadow-md mt-[10px] rounded-2xl"} style={{ minHeight: minHeight }}>
-            <ModelInfo modelName="GPT-100" modelImage="/static/images/rocket.svg" modelDescription="lol" />
+            <div className="flex-h gap-4">
+                <ModelInfo modelName="GPT-100" modelImage="/static/images/rocket.svg" modelDescription="lol" />
+                <ModelInfo modelName="Claude8" modelImage="/static/images/rocket.svg" modelDescription="lol" />
+            </div>
+
             {Messages(messages)}
             <TextInput />
         </div>

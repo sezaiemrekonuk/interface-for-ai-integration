@@ -43,10 +43,16 @@ body {
     @apply hover:bg-slate-200 hover:dark:bg-[#2c2c2e];
   }
 
+  #buttons button {
+    @apply hover:font-bold transition-all;
+  }
+
 
   .text-hover-bright {
     @apply dark:text-slate-400 dark:hover:text-white text-gray-600 hover:text-black
   }
+
+
 }
 
 .typing-demo {
@@ -118,4 +124,35 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate_animation:hover {
+  animation: rotate 1s linear infinite;
+}
+
+
+.openProfile {
+  width: 200px;
+  height: 300px;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.closeProfile {
+  width: 1px;
+  height: 1px;
+  transition: all 0.5s;
+  opacity: 0;
+
+  animation: displayNoneAnimation 0.2s;
 }
