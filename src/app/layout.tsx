@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className + " bg-gray-50 dark:bg-[#121212] min-h-dvh overflow-hidden"}>
+      <body className={inter.className + " bg-gray-50 dark:bg-[#121212] min-h-dvh overflow-hidden dark:text-slate-300"}>
         <ThemeProviderWrapper>
           <Navbar />
           {children}
