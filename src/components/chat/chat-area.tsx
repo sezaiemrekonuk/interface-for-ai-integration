@@ -21,8 +21,13 @@ export default function ChatArea() {
         const height = window.innerHeight;
         const reducedHeight = height * 0.87;
         setMinHeight(parseInt(reducedHeight.toString()));
+        window.addEventListener('resize', () => {
+            const height = window.innerHeight;
+            const reducedHeight = height * 0.87;
+            setMinHeight(parseInt(reducedHeight.toString()));
+        }
+        );
     }, []);
-
 
     useEffect(() => {
         if (messages.length === 0) return;
