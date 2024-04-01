@@ -12,7 +12,7 @@ export default function ChatPlaceHolder() {
         <div className="lg:px-24 flex items-center justify-evenly flex-v flex-grow overflow-auto">
             <section id="text-area">
                 <h1 className="bg-gradient-to-r from-pink-700 via-purple-700 to-green-500 text-transparent bg-clip-text text-4xl lg:text-7xl font-bold">Hello User,</h1>
-                <h1 className="text-3xl lg:text-5xl text-[#424242]">How can I help you today?</h1>
+                <h1 className="text-lg sm:text-3xl lg:text-5xl text-[#424242]">How can I help you today?</h1>
             </section>
             <section id="suggestions" className="my-auto">
                 <div className="flex flex-wrap gap-4">

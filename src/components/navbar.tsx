@@ -46,7 +46,7 @@ export default function Navbar() {
     )
 
     return (<>
-        <nav className="flex-h flex-center px-6 shadow-md py-1">
+        <nav className="flex-h flex-center px-6 shadow-md pt-5">
             <Image
                 src={Logo}
                 alt="Logo"
